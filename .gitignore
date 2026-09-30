@@ -1,0 +1,53 @@
+# ─────────────────────────────────────────────────────────────
+# Secretos y entornos
+# ─────────────────────────────────────────────────────────────
+**/.env
+**/.env/
+**/.venv/
+**/__pycache__/
+.claude/
+**/.claude/
+
+# ─────────────────────────────────────────────────────────────
+# Artefactos de compilación Java
+# ─────────────────────────────────────────────────────────────
+*.class
+*.jar
+!ODLML/lib/*.jar
+ODLML/dist/
+ODLML/build-dlml/
+
+# ─────────────────────────────────────────────────────────────
+# Resultados de benchmarks (se regeneran con benchmark_local_speedup.sh)
+# ─────────────────────────────────────────────────────────────
+**/log_benchmark*.out
+**/speedup_results*.csv
+**/load_distribution*.csv
+**/speedup_plot.*
+
+# ─────────────────────────────────────────────────────────────
+# Salidas de ejecución (se regeneran al correr los ejemplos)
+# ─────────────────────────────────────────────────────────────
+dlml_imagenes_autos/resultado*.json
+dlml_imagenes_autos/lote_*
+dlml_traffic_cluster/cellToCluster.json
+dlml_traffic_cluster/clusters*.csv
+dlml_traffic_cluster/clusters_finales.json
+dlml_traffic_cluster/densidad_global.json
+dlml_traffic_cluster/notas.txt
+
+# ─────────────────────────────────────────────────────────────
+# Datos de entrada (no se distribuyen: dataset Waze CDMX 2019)
+# ─────────────────────────────────────────────────────────────
+waze/
+dlml_imagenes_autos/D1_V2_B_2/
+dlml_imagenes_autos/salida/
+dlml_imagenes_autos/yolov8n.pt
+
+# ─────────────────────────────────────────────────────────────
+# Editores y sistema
+# ─────────────────────────────────────────────────────────────
+*.swp
+*.swo
+*~
+.DS_Store
