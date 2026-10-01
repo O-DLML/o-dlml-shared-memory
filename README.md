@@ -7,10 +7,10 @@ request more from the others at run time.
 This repository contains the library (`ODLML/`) and four example applications that use
 it, each with an equivalent sequential version for measuring *speedup*.
 
-> **Historical note.** O-DLML started as an MPI-based implementation (`mpirun`, `mpijavac`).
-> The current version uses **shared memory with Java threads**: it requires neither MPI
-> nor `mpijavac`. The original MPI code is kept in [`legacy_mpi/`](legacy_mpi/) for
-> reference.
+#> **Historical note.** O-DLML started as an MPI-based implementation (`mpirun`, `mpijavac`).
+#> The current version uses **shared memory with Java threads**: it requires neither MPI
+#> nor `mpijavac`. The original MPI code is kept in [`legacy_mpi/`](legacy_mpi/) for
+#> reference.
 
 ## Requirements
 
@@ -67,9 +67,10 @@ o-dlml-shared-memory/
 ├── dlml_hola/              # Minimal example: distributing 20 messages + a reduction
 ├── dlml_nqueens/           # N-queens via breadth-first search (irregular workload)
 ├── dlml_imagenes_autos/    # Car detection with YOLO over batches of images
-├── dlml_traffic_cluster/   # Geographic clustering of traffic alerts (Waze, Mexico City)
-│
-└── legacy_mpi/             # Original MPI versions (obsolete, do not compile)
+└── dlml_traffic_cluster/   # Geographic clustering of traffic alerts (Waze, Mexico City)
+#├── dlml_traffic_cluster/   # Geographic clustering of traffic alerts (Waze, Mexico City)
+#│
+#└── legacy_mpi/             # Original MPI versions (obsolete, do not compile)
 ```
 
 ## The examples
