@@ -7,11 +7,6 @@ request more from the others at run time.
 This repository contains the library (`ODLML/`) and four example applications that use
 it, each with an equivalent sequential version for measuring *speedup*.
 
-#> **Historical note.** O-DLML started as an MPI-based implementation (`mpirun`, `mpijavac`).
-#> The current version uses **shared memory with Java threads**: it requires neither MPI
-#> nor `mpijavac`. The original MPI code is kept in [`legacy_mpi/`](legacy_mpi/) for
-#> reference.
-
 ## Requirements
 
 | Component | Version used |
